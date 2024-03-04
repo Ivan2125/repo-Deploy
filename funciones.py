@@ -112,7 +112,7 @@ def developer(desarrollador):
     return resumen_por_año.to_dict(orient="index")
 
 
-def userData(user_id, total_reviews=None):
+def userData(user_id):
     """
     Esta función devuelve la cantidad de dinero gastado por el usuario, el porcentaje de recomendación en base a reviews_recommend y cantidad de items.
 
@@ -143,6 +143,7 @@ def userData(user_id, total_reviews=None):
     ].sum()
 
     # Calcula el porcentaje de recomendaciones realizadas por el usuario de interés
+    total_reviews = None
     if total_reviews is None:
         total_reviews = len(reviews["user_id"].unique())
 
@@ -156,7 +157,7 @@ def userData(user_id, total_reviews=None):
     }
 
 
-def userForGenre(genero, usuario_especifico=None):
+def userForGenre(genero):
     """
     Devuelve el usuario que acumula más horas jugadas para el género dado y una lista de la acumulación de horas jugadas por año de lanzamiento.
 
@@ -181,7 +182,7 @@ def userForGenre(genero, usuario_especifico=None):
     data_genero = user_time_year[
         user_time_year["genres"].str.contains(genero, case=False, na=False)
     ]
-
+    usuario_especifico = None
     if usuario_especifico is None:
         # Encuentra el usuario con más horas jugadas para el género dado
         usuario_mas_horas = (

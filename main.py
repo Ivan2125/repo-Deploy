@@ -39,7 +39,6 @@ def developer(
         ..., description="Nombre del Desarrollador", example="Valve"
     )
 ):
-
     return af.developer(desarrollador)
 
 
@@ -81,7 +80,7 @@ def userForGenre(genero: str = Query(..., description="Género", example="Indie"
                         """,
     tags=["Consultas Generales"],
 )
-def usersRecommend(anio: str = Query(..., description="Año", example="2012")):
+def usersRecommend(anio: int = Query(..., description="Año", example="2008")):
     return af.usersRecommend(anio)
 
 
