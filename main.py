@@ -39,6 +39,7 @@ def developer(
         ..., description="Nombre del Desarrollador", example="Valve"
     )
 ):
+
     return af.developer(desarrollador)
 
 
@@ -53,7 +54,7 @@ def developer(
     tags=["Consultas Generales"],
 )
 def userData(user_id: str = Query(..., description="user_id", example="evcentric")):
-    return af.userdata(user_id)
+    return af.userData(user_id)
 
 
 @app.get(
@@ -67,7 +68,7 @@ def userData(user_id: str = Query(..., description="user_id", example="evcentric
     tags=["Consultas Generales"],
 )
 def userForGenre(genero: str = Query(..., description="Género", example="Indie")):
-    return af.genre(genero)
+    return af.userForGenre(genero)
 
 
 @app.get(
@@ -75,12 +76,12 @@ def userForGenre(genero: str = Query(..., description="Género", example="Indie"
     description=""" <font color="green">
                         1. Haga clik en "Try it out".<br>
                         2. Ingrese el género en el box abajo.<br>
-                        3. Scrollear a "Resposes" para ver el top 3 de desarrolladores con juegos MÁS recomendados y análisis de sentimientos positivos (2) por usuarios para el año dado.
+                        3. Scrollear a "Resposes" para ver el top 3 de desarrolladores con juegos más recomendados y análisis de sentimientos positivos (2) por usuarios para el año dado.
                         </font>
                         """,
     tags=["Consultas Generales"],
 )
-def usersRecommend(anio: int = Query(..., description="Año", example="2008")):
+def usersRecommend(anio: int = Query(..., description="Año", example="2012")):
     return af.usersRecommend(anio)
 
 
