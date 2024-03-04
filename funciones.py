@@ -8,10 +8,8 @@ import operator
 
 reviews = pd.read_parquet("data/02-user-reviews.parquet")
 gasto_items = pd.read_parquet("data/04-gasto-items.parquet")
-ranking_genero = pd.read_parquet("data/05-ranking-genero.parquet")
 user_time_year = pd.read_parquet("data/08-user-time-year.parquet")
 items_developer = pd.read_parquet("data/07-items-developer.parquet")
-piv_norm = pd.read_parquet("data/11-piv-norm.parquet")
 top_dev = pd.read_parquet("data/09-top-dev.parquet")
 item_similar = pd.read_parquet("data/13-item-similar.parquet")
 
