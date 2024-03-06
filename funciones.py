@@ -64,8 +64,8 @@ def presentationPage():
             
             <button type="button" class="centered-button" onclick="window.location.href = window.location.href + 'docs'">Consulta API</button>
             
-            <p>Visit my profile on <a href="https://www.linkedin.com/in/ivan-parra-2501">&nbsp;<img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin"></a></p>
-            <p>The development of this project is hosted on <a href="https://github.com/Ivan2125/MLOps-Steam">&nbsp;<img alt="GitHub" src="https://img.shields.io/badge/GitHub-black?style=flat-square&logo=github"></a></p>
+            <p>Conecta conmigo<a href="https://www.linkedin.com/in/ivan-parra-2501">&nbsp;<img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin"></a></p>
+            <p>El desarrollo de este proyecto se encuentra en<a href="https://github.com/Ivan2125/MLOps-Steam">&nbsp;<img alt="GitHub" src="https://img.shields.io/badge/GitHub-black?style=flat-square&logo=github"></a></p>
         </body>
     </html>
     """
