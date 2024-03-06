@@ -27,56 +27,45 @@ def presentationPage():
             <title>API Steam</title>
             <style>
                 body {
-                    font-family: Arial, sans-serif;
+                    font-family: Georgia, sans-serif;
                     padding: 20px;
-                    background-color: #f4f4f4;
                 }
                 h1 {
-                    color: #333;
+                    color: #789;
                     text-align: center;
                 }
                 p {
-                    color: #666;
+                    color: white;
                     text-align: center;
                     font-size: 18px;
                     margin-top: 20px;
+                    background-color: gray;
+                    padding: 10px;
                 }
-                span {
-                    background-color: lightgray;
-                    padding: 2px 8px;
-                    border-radius: 4px;
-                }
-                a {
-                    text-decoration: none;
-                    color: #3498db;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-                img {
-                    vertical-align: middle;
-                }
-                .badge {
-                    display: inline-block;
-                    padding: 5px 10px;
-                    font-size: 14px;
-                    font-weight: bold;
-                    text-align: center;
-                    color: #fff;
-                    background-color: #333;
-                    border-radius: 4px;
-                    margin-top: 10px;
+                .centered-button {
+                background-color: gray;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px; /* optional for rounded corners */
+                display: block; /* Makes the button fill the available width */
+                margin: 0 auto; /* Centers the button horizontally */
+                cursor: pointer; /* Changes cursor to pointer on hover */
                 }
             </style>
         </head>
         <body>
+            <h1>API Steam</h1>
             <h1>API de consultas de videojuegos de la plataforma Steam</h1>
+            
             <p>Bienvenido a la API de Steam donde puedes realizar diversas consultas sobre la plataforma de videojuegos.</p>
             <p><strong>INSTRUCCIONES:</strong></p>
-            <p>Escribe <span>/docs</span> después de la URL actual para interactuar con la API.</p>
-            <p>Visita mi perfil en <a href="https://www.linkedin.com/in/ivan-parra-2501//">LinkedIn <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin"></a></p>
-            <p>El desarrollo de este proyecto se encuentra en <a href="https://github.com/Ivan2125/MLOps-Steam">GitHub <img alt="GitHub" src="https://img.shields.io/badge/GitHub-black?style=flat-square&logo=github"></a></p>
-            <div class="badge">Elaborado por Iván Parra</div>
+            <p>Haz click en el botón de abajo para consultar la API :</p>
+            
+            <button type="button" class="centered-button" onclick="window.location.href = window.location.href + 'docs'">Consulta API</button>
+            
+            <p>Visit my profile on <a href="https://www.linkedin.com/in/ivan-parra-2501">&nbsp;<img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin"></a></p>
+            <p>The development of this project is hosted on <a href="https://github.com/Ivan2125/MLOps-Steam">&nbsp;<img alt="GitHub" src="https://img.shields.io/badge/GitHub-black?style=flat-square&logo=github"></a></p>
         </body>
     </html>
     """
